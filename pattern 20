@@ -1,0 +1,38 @@
+def pattern(n):
+    # Upper half
+    for i in range(n):
+        # Left stars
+        print("*" * (n - i), end="")
+
+        # Middle spaces
+        print(" " * (2 * i), end="")
+
+        # Right stars
+        print("*" * (n - i))
+
+    # Lower half
+    for i in range(n - 1, -1, -1):
+        # Left stars
+        print("*" * (n - i), end="")
+
+        # Middle spaces
+        print(" " * (2 * i), end="")
+
+        # Right stars
+        print("*" * (n - i))
+
+
+n = int(input())
+pattern(n)
+//input:-5
+//output:-
+**********
+****  ****
+***    ***
+**      **
+*        *
+*        *
+**      **
+***    ***
+****  ****
+**********
