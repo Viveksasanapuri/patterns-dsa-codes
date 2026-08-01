@@ -1,0 +1,16 @@
+def print14(n):
+    for i in range(n):
+        for ch in range(ord('A'), ord('A') + i + 1):
+            print(chr(ch), end=" ")
+        print()
+
+
+n = int(input())
+print14(n)
+//input:-5
+//output:-
+A
+AB
+ABC
+ABCD
+ABCDE
