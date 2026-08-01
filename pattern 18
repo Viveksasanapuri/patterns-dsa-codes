@@ -1,0 +1,25 @@
+def pattern(n):
+    for i in range(n):
+        # Print leading spaces
+        print(" " * (n - i - 1), end="")
+
+        # Print increasing alphabets
+        for j in range(i + 1):
+            print(chr(ord('A') + j), end="")
+
+        # Print decreasing alphabets
+        for j in range(i - 1, -1, -1):
+            print(chr(ord('A') + j), end="")
+
+        print()
+
+
+n = int(input())
+pattern(n)
+//input:-5
+//output:-
+    A
+   ABA
+  ABCBA
+ ABCDCBA
+ABCDEDCBA
