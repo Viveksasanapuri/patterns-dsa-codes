@@ -1,0 +1,21 @@
+def pattern(n):
+    for i in range(n):
+        # Print leading spaces
+        print(" " * (n - i - 1), end="")
+
+        # Print alphabets
+        for j in range(2 * i + 1):
+            print(chr(ord('A') + j), end="")
+
+        print()
+
+
+n = int(input())
+pattern(n)
+//input:-5
+//output:-
+    A
+   ABC
+  ABCDE
+ ABCDEFG
+ABCDEFGHI
